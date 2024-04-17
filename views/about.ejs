@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!--Meta Data-->
+    <%- include('partial/title.ejs'); %> 
+
+    <% if (data.NODE_ENV == 'production') { %>
+      <!-- Production Stylesheets -->
+      <link rel="stylesheet" href="assets/production/css/about.min.css">
+
+    <% }else { %>
+      <!-- Development Stylesheets -->
+      <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css">
+      <link rel="stylesheet" href="assets/lib/css/responsive.css">
+      <link rel="stylesheet" href="assets/lib/css/select2.min.css">
+      <link rel="stylesheet" href="assets/lib/css/spacing.css">
+      <link rel="stylesheet" href="assets/lib/css/style.css">
+      <link rel="stylesheet" href="assets/lib/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="assets/lib/css/bootstrap-datepicker.min.css">
+      <link rel="stylesheet" href="assets/lib/css/magnific-popup.css">
+      <link rel="stylesheet" href="assets/css/header.css">
+      
+    <% } %>
+  </head>
+
+  <body>
+    <!--Header-->
+    <%- include('partial/header.ejs', {data: data }); %>
+    
+
+    <!--About Start-->
+    <div class="about-page pt_60 pb_30">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Our Mission</h3>
+            <p>
+              At DigiHealth, our mission is deeply rooted in the belief that healthcare should be accessible to everyone, regardless of geographical constraints or time limitations. We understand the challenges individuals face when seeking medical assistance, which is why we have dedicated ourselves to creating a platform that removes these barriers. Our goal is to empower patients by providing them with a user-friendly interface where they can easily find and connect with experienced healthcare professionals. By offering seamless appointment scheduling and virtual consultations, we strive to make healthcare services more convenient and accessible.
+              <br><br>
+              Furthermore, our mission extends beyond mere connectivity. We are committed to fostering a sense of community within the digital healthcare landscape. Through educational resources, support forums, and personalized health recommendations, we aim to empower individuals to make informed decisions about their health. By promoting collaboration between patients and healthcare providers, we envision a future where healthcare is not just about treating illnesses but also about promoting preventive care and holistic well-being.
+              <br><br>
+              In essence, our mission at DigiHealth is to revolutionize the healthcare experience. We are driven by the belief that technology can be a powerful tool for improving lives, and we are dedicated to leveraging this potential to create a healthcare ecosystem that is accessible, inclusive, and patient-centric.
+            </p>
+            <br>
+            <h3>Our Vision</h3>
+            <p>
+              Our vision at DigiHealth is guided by the desire to redefine the healthcare landscape through innovation and inclusivity. We envision a world where healthcare services are seamlessly integrated into people's lives, making quality medical care accessible to everyone, regardless of their circumstances. By harnessing the power of digital technology, we aspire to bridge the gap between patients and healthcare providers, making healthcare services more efficient, personalized, and responsive to individual needs.
+              <br><br>
+  Furthermore, we envision DigiHealth as not just a platform for appointments and consultations but as a comprehensive healthcare hub. Our vision includes creating a virtual environment where patients can access a wealth of information, from health tips and wellness resources to specialized medical insights. By leveraging data-driven analytics and AI-powered tools, we aim to deliver personalized healthcare recommendations that empower individuals to take proactive steps towards better health outcomes.
+  <br><br>
+  Ultimately, our vision for DigiHealth extends beyond the digital realm. We aspire to be at the forefront of transforming healthcare delivery globally, advocating for patient-centric care, promoting preventive healthcare measures, and driving positive change in the healthcare industry. Through collaboration, innovation, and a relentless commitment to improving healthcare accessibility, we aim to shape a healthier and happier future for all.
+            </p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--About End-->
+
+<!--Call Start-->
+<div class="call-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-8 col-12">
+        <div class="call-text">
+          <h3>Now getting an appointment in any hospital has become online & easy!</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-12">
+        <div class="button">
+          <a href="/patientregistration"> Book Appointment Now <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Call End-->
+
+    <!--Footer-->
+    <%- include('partial/footer.ejs'); %>
+
+    <!-- JavaScript -->
+    <script defer src="assets/lib/js/jquery-3.4.1.min.js"></script>
+    <script defer src="/assets/lib/js/popper.min.js"></script>
+    <script defer src="assets/lib/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/lib/js/all.min.js"></script>
+    <script defer src="assets/lib/js/select2.full.min.js"></script>
+    <script defer src="assets/js/about.js"></script>
+
+  </body>
+</html>
